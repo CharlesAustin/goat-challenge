@@ -1,0 +1,66 @@
+@use "variables" as *;
+
+.main-header {
+    position: sticky;
+    top: 0;
+    background-color: $colour-alice-blue;
+}
+
+.main-header__content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-navlist {
+    display: flex;
+    height: 95px;
+    gap: 2rem;
+    font-family: $font-family-header;
+    font-size: $font-size-body-sm;
+    text-transform: uppercase;
+}
+
+.main-navlist__item {
+    display: flex;
+    align-items: center;
+}
+
+.main-navlist__link {
+    color: $colour-maastricht-blue;
+}
+
+.main-navlist__link--sans-border {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    position: relative;
+    
+    &:before {
+        content: "";
+        opacity: 0;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        background-color: $colour-maastricht-blue;
+        height: 6px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        transition: opacity 150ms ease-in-out;
+    }
+
+    &:hover:before {
+        opacity: 1;
+    }
+}
+
+.main-navlist__link--border {
+    border: 3px solid $colour-han-blue;
+    border-radius: 50px;
+    padding: 12px 24px;
+    transition: all 200ms ease-in-out;
+
+    &:hover {
+        color: $colour-white;
+        background-color: $colour-han-blue;
+    }
+}
