@@ -3,6 +3,7 @@ A mockup for an about page. Built with HTML, JavaScript, and CSS (SCSS).
 
 Assumptions:
 - design based on desktop mockup at 1600px
+- Proprietary font (National) has been substituted for Work Sans
 - lorem ipsum used for accordion dropdown content
 - dummy links for page navs, social media links point to accounts
 
