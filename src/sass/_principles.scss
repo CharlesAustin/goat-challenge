@@ -1,0 +1,43 @@
+@use 'variables' as *;
+
+.principles {
+    margin-bottom: 8rem;
+}
+
+.principles__tag,
+.principles__title,
+.principles__subheader {
+    font-family: $font-family-header;
+}
+
+.principles__tag {
+    font-size: $font-size-body-xs;
+    color: $colour-han-blue;
+    text-transform: uppercase;
+}
+
+.principles__header {
+    margin: 8rem 0;
+}
+
+.principles__title {
+    font-size: $font-size-h1;
+    font-weight: $font-weight-extrabold;
+    color: $colour-maastricht-blue;
+}
+
+.principles__grid {
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: 1fr 1fr; 
+    gap: 96px 30px; 
+}
+
+.principles__subheader {
+    font-size: 1.5rem;
+}
+
+.principles__desc {
+    font-family: $font-family-body;
+    font-size: $font-size-body-sm;
+}

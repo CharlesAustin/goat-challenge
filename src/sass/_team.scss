@@ -1,0 +1,136 @@
+@use "variables" as *;
+
+.team {
+    background-color: $colour-han-blue;
+    padding: 8rem 0;
+    clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 90%);
+}
+
+.team__inner {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.team__header {
+    display: flex;
+    align-items: center;
+}
+
+.team__title,
+.team__desc {
+    font-family: $font-family-header;
+}
+
+.team__title {
+    font-size: calc($font-size-h1 - 0.75rem);
+    font-weight: $font-weight-extrabold;
+    color: $colour-aquamarine;
+}
+
+.team__desc {
+    font-size: $font-size-body-md;
+    font-weight: $font-weight-semibold;
+    color: $colour-white;
+}
+
+.team__member {
+    position: relative;
+    display: inline-block;
+    padding: 2rem;
+
+    &:hover {
+        .member-pic {
+            background-color: $colour-aquamarine;
+            border-color: $colour-aquamarine;
+        }
+
+        .member-pic__bg {
+            background-size: 105%;
+        }
+
+        .member-pic__info {
+            opacity: 1;
+            rotate: -10deg;
+        }
+    }
+}
+
+.member-pic {
+    display: inline-block;
+    border-radius: 50%;
+    background-color: $colour-oyster-blue;
+    width: 278px;
+    height: 278px;
+    margin-top: 50px;
+    transition: all 400ms cubic-bezier(.28,.01,.31,1.47);
+}
+
+.member-pic__bg {
+    display: inline-block;
+    position: relative;
+    z-index: 10;
+    width: 278px;
+    height: 328px;
+    margin-top: -50px;
+    background: none no-repeat center bottom / 278px;
+    border-radius: 0 0 139px 139px;
+    transition: all 400ms cubic-bezier(.28,.01,.31,1.47);
+}
+
+.member-pic__bg--darren {
+    background-image: url("../assets/images/darren-headshot.png");
+}
+
+.member-pic__bg--terence {
+    background-image: url("../assets/images/terence-headshot.png");
+}
+
+.member-pic__bg--tim {
+    background-image: url("../assets/images/tim-headshot.png");
+}
+
+.member-pic__bg--andre {
+    background-image: url("../assets/images/andre-headshot.png");
+}
+
+.member-pic__bg--teammember {
+    background-image: url("../assets/images/goat-teammember-headshot.png");
+    background-size: 230px;
+}
+
+.member-pic__bg.member-pic__bg--teammember:hover {
+    background-size: 101%;
+}
+
+.member-pic__bg--aidan {
+    background-image: url("../assets/images/aidan-headshot.png");
+}
+
+.member-pic__bg--sam {
+    background-image: url("../assets/images/sam-headshot.png");
+}
+
+.member-pic__bg--heather {
+    background-image: url("../assets/images/heather-headshot.png");
+}
+
+
+.member-pic__info {
+    position: absolute;
+    top: 59px;
+    left: 8px;
+    z-index: 1;
+    width: 330px;
+    opacity: 0;
+    height: auto;
+    rotate: 55deg;
+    transition: all 400ms ease-in-out;
+
+    .b {
+        fill: $colour-white;
+        font-family: $font-family-header;
+        font-size: 20px;
+        font-weight: 600;
+    }
+}
+

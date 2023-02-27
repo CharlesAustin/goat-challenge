@@ -4,5 +4,34 @@
 }
 
 .container--xl {
-    padding: 0 2.635rem;
+    padding: 0 2.625rem;
+}
+
+.container--lg {
+    padding: 0 6.25rem;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.row-gap-30 {
+    gap: 30px;
+}
+
+.row-center {
+    align-items: center;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+}
+
+.p-margin-bottom {
+    margin-bottom: 1rem;
 }

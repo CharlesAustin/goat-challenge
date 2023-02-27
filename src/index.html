@@ -62,237 +62,707 @@
                 </nav>
             </div>
         </header>
-        <section class="hero">
-            <img src="" alt="" />
-            <h1>About Us</h1>
-            <p>
-                Built out of a desire to make digital experiences better with a
-                healthy balance of adaptability and candor.
-            </p>
+        <section class="hero container container--xl">
+            <div class="hero__background">
+                <div class="hero__text">
+                    <div class="hero__title">About Us</div>
+                    <div class="hero__desc">
+                        <p class="hero__desc--inner">
+                            Built out of a desire to make digital experiences
+                            better with a healthy balance of adaptability and
+                            candor.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <svg
+                style="visibility: hidden; position: absolute"
+                width="0"
+                height="0"
+                xmlns="http://www.w3.org/2000/svg"
+                version="1.1"
+            >
+                <defs>
+                    <filter id="round">
+                        <feGaussianBlur
+                            in="SourceGraphic"
+                            stdDeviation="3"
+                            result="blur"
+                        />
+                        <feColorMatrix
+                            in="blur"
+                            mode="matrix"
+                            values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9"
+                            result="corners"
+                        />
+                        <feComposite
+                            in="SourceGraphic"
+                            in2="corners"
+                            operator="atop"
+                        />
+                    </filter>
+                </defs>
+            </svg>
         </section>
         <main>
-            <section>
-                <p>
-                    Organizations pushing for change know that success amounts
-                    to nothing if the relationship is one-sided.
-                </p>
-                <p>
-                    Great experiences are born out of a respectful tension
-                    between vastly different perspectives. We&apos;ll bring
-                    behavioural insights, design ideas, and technical
-                    breakdowns. You bring deep knowledge of the company,
-                    industry and past endeavours. Let&apos;s both promise to
-                    bring politeness and inclusivity, leaving pettiness at the
-                    virtual door.
-                </p>
-            </section>
-            <section class="principles">
-                <div class="principles-title">
-                    <p>How we work</p>
-                    <h2>Principles of Work</h2>
-                </div>
-                <div class="col">
-                    <h3>Small, cross-discipline teams.</h3>
-                    <p>
-                        Building digital experiences requires integrated teams
-                        of strategy, design, and development working closely
-                        together from the offset, not a siloed step-by-step
-                        process.
-                    </p>
-                </div>
-                <div class="col">
-                    <h3>Design as a business solution.</h3>
-                    <p>
-                        Understanding the impact of design on business goals is
-                        like breaking through the fourth wall. Magical things
-                        can happen to those who embrace it.
-                    </p>
-                </div>
-                <div class="col">
-                    <h3>A step back for two steps forward.</h3>
-                    <p>
-                        We embrace the opportunity to gain a little perspective
-                        on projects. Rather than jumping in with assumptions and
-                        taking things at face value, we unlock new doors by
-                        simply asking ‘why?’
-                    </p>
-                </div>
-                <div class="col">
-                    <h3>In it for the long haul.</h3>
-                    <p>
-                        The greatest digital products are always evolving. We
-                        foster working relationships with our clients to enable
-                        optimization and growth over time.
-                    </p>
-                </div>
-                <div class="col">
-                    <h3>Integration with the development.</h3>
-                    <p>
-                        The best digital products are made by designers and
-                        engineers working closely together. Our process is built
-                        around tight cooperation with the development team from
-                        the early stages.
-                    </p>
+            <section class="intro container">
+                <div class="row row-gap-30">
+                    <div class="col">
+                        <p class="intro__text-lg">
+                            Organizations pushing for change know that success
+                            amounts to nothing if the relationship is one-sided.
+                        </p>
+                    </div>
+                    <div class="col">
+                        <p class="intro__text-md">
+                            Great experiences are born out of a respectful
+                            tension between vastly different perspectives.
+                            We&apos;ll bring behavioural insights, design ideas,
+                            and technical breakdowns. You bring deep knowledge
+                            of the company, industry and past endeavours.
+                        </p>
+                        <p class="intro__text-md intro__text-md--bold">
+                            Let&apos;s both promise to bring politeness and
+                            inclusivity, leaving pettiness at the virtual door.
+                        </p>
+                    </div>
                 </div>
             </section>
-            <section class="slider">
-                <div class="slide">
-                    <figure>
-                        <blockquote>
-                            "The Goat team was able to work nimbly and
-                            fearlessly inside our complicated system. They
-                            continue to deliver a timely and professional
-                            service for us.
-                        </blockquote>
-                        <figcaption>
-                            Tracy Mcrae General Manager • Simon Fraser
-                            University
-                        </figcaption>
-                    </figure>
+            <section class="principles container container--lg">
+                <div class="principles__header">
+                    <p class="principles__tag">How we work</p>
+                    <h2 class="principles__title">Principles of Work</h2>
                 </div>
-                <div class="slide">
-                    <figure>
-                        <blockquote>
-                            The work with Goat is always continuous. They keep
-                            us up to standard and on top of our industry.
-                            They're incredible partners to have on your side.
-                        </blockquote>
-                        <figcaption>
-                            Carmen Dueck General Manager • Integrative
-                            Naturopathic Medical Centre
-                        </figcaption>
-                    </figure>
+                <div class="principles__grid">
+                    <div class="principles__grid-item">
+                        <h3 class="principles__subheader p-margin-bottom">
+                            Small, cross-discipline teams.
+                        </h3>
+                        <p class="principles__desc">
+                            Building digital experiences requires integrated
+                            teams of strategy, design, and development working
+                            closely together from the offset, not a siloed
+                            step-by-step process.
+                        </p>
+                    </div>
+                    <div class="principles__grid-item">
+                        <h3 class="principles__subheader p-margin-bottom">
+                            Design as a business solution.
+                        </h3>
+                        <p class="principles__desc">
+                            Understanding the impact of design on business goals
+                            is like breaking through the fourth wall. Magical
+                            things can happen to those who embrace it.
+                        </p>
+                    </div>
+                    <div class="principles__grid-item">
+                        <h3 class="principles__subheader p-margin-bottom">
+                            A step back for two steps forward.
+                        </h3>
+                        <p class="principles__desc">
+                            We embrace the opportunity to gain a little
+                            perspective on projects. Rather than jumping in with
+                            assumptions and taking things at face value, we
+                            unlock new doors by simply asking 'why?'
+                        </p>
+                    </div>
+                    <div class="principles__grid-item">
+                        <h3 class="principles__subheader p-margin-bottom">
+                            In it for the long haul.
+                        </h3>
+                        <p class="principles__desc">
+                            The greatest digital products are always evolving.
+                            We foster working relationships with our clients to
+                            enable optimization and growth over time.
+                        </p>
+                    </div>
+                    <div class="principles__grid-item">
+                        <h3 class="principles__subheader p-margin-bottom">
+                            Integration with the development.
+                        </h3>
+                        <p class="principles__desc">
+                            The best digital products are made by designers and
+                            engineers working closely together. Our process is
+                            built around tight cooperation with the development
+                            team from the early stages.
+                        </p>
+                    </div>
                 </div>
-                <div class="slider__navigation">
-                    <button>left</button>
-                    <button>right</button>
+            </section>
+            <section class="slider-container container container--xl">
+                <div class="slider">
+                    <div class="slider__pagination"></div>
+                    <div class="slides">
+                        <div class="slide active">
+                            <figure class="slide__content">
+                                <img
+                                    src="./assets/svg/quotes.svg"
+                                    alt="quotation marks"
+                                    class="slide__bg"
+                                />
+                                <blockquote class="slide__quote">
+                                    The Goat team was able to work nimbly and
+                                    fearlessly inside our complicated system.
+                                    They continue to deliver a timely and
+                                    professional service for us.
+                                </blockquote>
+                                <figcaption class="slide__attr">
+                                    <p
+                                        class="slide__attr-p slide__attr-p--uppercase slide__attr-p--border-top"
+                                    >
+                                        Tracy Mcrae
+                                    </p>
+                                    <p
+                                        class="slide__attr-p slide__attr-p--border-bottom"
+                                    >
+                                        General Manager
+                                        <span class="slide__attr-p--dark">
+                                            Simon Fraser University
+                                        </span>
+                                    </p>
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div class="slide">
+                            <figure class="slide__content">
+                                <img
+                                    src="./assets/svg/quotes-green.svg"
+                                    alt="quotation marks"
+                                    class="slide__bg"
+                                />
+                                <blockquote class="slide__quote">
+                                    The work with Goat is always continuous.
+                                    They keep us up to standard and on top of
+                                    our industry. They're incredible partners to
+                                    have on your side.
+                                </blockquote>
+                                <figcaption class="slide__attr">
+                                    <p
+                                        class="slide__attr-p slide__attr-p--uppercase slide__attr-p--border-top"
+                                    >
+                                        Carmen Dueck
+                                    </p>
+                                    <p
+                                        class="slide__attr-p slide__attr-p--border-bottom"
+                                    >
+                                        General Manager
+                                        <span class="slide__attr-p--dark"
+                                            >Integrative Naturopathic Medical
+                                            Centre</span
+                                        >
+                                    </p>
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider__controls">
+                    <button class="slider__button prev" aria-label="previous">
+                        <img
+                            src="./assets/svg/arrow-left.svg"
+                            alt="Previous arrow"
+                        />
+                    </button>
+                    <button class="slider__button next" aria-label="next">
+                        <img
+                            src="./assets/svg/arrow-right.svg"
+                            alt="Next arrow"
+                        />
+                    </button>
                 </div>
             </section>
             <section class="team">
-                <h2>Meet the team</h2>
-                <p>
-                    We&apos;re a Canada-based, fully remote but close-knit team
-                    working coast to coast
-                </p>
-                <div class="team__grid">
-                    <div class="team__member">
-                        <span class="team__member-info"></span>
-                        <img src="" alt="" />
+                <div class="team__inner container container--lg">
+                    <div class="team__header">
+                        <div class="row row-gap-30 row-center">
+                            <div class="col">
+                                <h2 class="team__title">Meet the team</h2>
+                            </div>
+                            <div class="col">
+                                <p class="team__desc">
+                                    We&apos;re a Canada-based, fully remote but
+                                    close-knit team working coast to coast
+                                </p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="team__member">
-                        <span class="team__member-info"></span>
-                        <img src="" alt="" />
-                    </div>
-                    <div class="team__member">
-                        <span class="team__member-info"></span>
-                        <img src="" alt="" />
-                    </div>
-                    <div class="team__member">
-                        <span class="team__member-info"></span>
-                        <img src="" alt="" />
-                    </div>
-                    <div class="team__member">
-                        <span class="team__member-info"></span>
-                        <img src="" alt="" />
-                    </div>
-                    <div class="team__member">
-                        <span class="team__member-info"></span>
-                        <img src="" alt="" />
-                    </div>
-                    <div class="team__member">
-                        <span class="team__member-info"></span>
-                        <img src="" alt="" />
-                    </div>
-                    <div class="team__member">
-                        <span class="team__member-info"></span>
-                        <img src="" alt="" />
+
+                    <div class="team__grid">
+                        <div class="team__member">
+                            <span class="member-pic">
+                                <span
+                                    class="member-pic__bg member-pic__bg--darren"
+                                ></span>
+                            </span>
+                            <svg
+                                class="member-pic__info"
+                                id="a"
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 301.32 298.12"
+                            >
+                                <text
+                                    class="b"
+                                    transform="translate(16.42 154.59) rotate(-87.98)"
+                                >
+                                    <tspan x="0" y="0">D</tspan>
+                                </text>
+                                <text
+                                    class="b"
+                                    transform="translate(16.88 140.98) rotate(-82.61)"
+                                >
+                                    <tspan x="0" y="0">A</tspan>
+                                </text>
+                                <text
+                                    class="b"
+                                    transform="translate(18.55 127.99) rotate(-77.16)"
+                                >
+                                    <tspan x="0" y="0">R</tspan>
+                                </text>
+                                <text
+                                    class="b"
+                                    transform="translate(21.48 115.04) rotate(-71.65)"
+                                >
+                                    <tspan x="0" y="0">R</tspan>
+                                </text>
+                                <text
+                                    class="b"
+                                    transform="translate(25.68 102.42) rotate(-66.33)"
+                                >
+                                    <tspan x="0" y="0">E</tspan>
+                                </text>
+                                <text
+                                    class="b"
+                                    transform="translate(30.58 91.08) rotate(-60.78)"
+                                >
+                                    <tspan x="0" y="0">N</tspan>
+                                </text>
+                                <text
+                                    class="b"
+                                    transform="translate(37.79 78.48) rotate(-56.58)"
+                                >
+                                    <tspan x="0" y="0"></tspan>
+                                </text>
+                                <text
+                                    class="b"
+                                    transform="translate(40.9 73.47) rotate(-52.38)"
+                                >
+                                    <tspan x="0" y="0">H</tspan>
+                                </text>
+                                <text
+                                    class="b"
+                                    transform="translate(49.72 62.05) rotate(-46.75)"
+                                >
+                                    <tspan x="0" y="0">A</tspan>
+                                </text>
+                                <text
+                                    class="b"
+                                    transform="translate(58.71 52.47) rotate(-41.34)"
+                                >
+                                    <tspan x="0" y="0">R</tspan>
+                                </text>
+                                <text
+                                    class="b"
+                                    transform="translate(68.66 43.7) rotate(-35.9)"
+                                >
+                                    <tspan x="0" y="0">K</tspan>
+                                </text>
+                                <text
+                                    class="b"
+                                    transform="translate(79.37 35.88) rotate(-30.2)"
+                                >
+                                    <tspan x="0" y="0">N</tspan>
+                                </text>
+                                <text
+                                    class="b"
+                                    transform="translate(91.91 28.63) rotate(-24.66)"
+                                >
+                                    <tspan x="0" y="0">E</tspan>
+                                </text>
+                                <text
+                                    class="b"
+                                    transform="translate(103.12 23.46) rotate(-19.49)"
+                                >
+                                    <tspan x="0" y="0">S</tspan>
+                                </text>
+                                <text
+                                    class="b"
+                                    transform="translate(114.97 19.25) rotate(-14.27)"
+                                >
+                                    <tspan x="0" y="0">S</tspan>
+                                </text>
+                                <text
+                                    class="b"
+                                    transform="translate(156.28 291.56) rotate(-3.2)"
+                                >
+                                    <tspan x="0" y="0">D</tspan>
+                                </text>
+                                <text
+                                    class="b"
+                                    transform="translate(171.3 290.54) rotate(-7.7)"
+                                >
+                                    <tspan x="0" y="0">I</tspan>
+                                </text>
+                                <text
+                                    class="b"
+                                    transform="translate(178.11 289.74) rotate(-12.06)"
+                                >
+                                    <tspan x="0" y="0">R</tspan>
+                                </text>
+                                <text
+                                    class="b"
+                                    transform="translate(192.27 286.64) rotate(-17.88)"
+                                >
+                                    <tspan x="0" y="0">E</tspan>
+                                </text>
+                                <text
+                                    class="b"
+                                    transform="translate(204.96 282.54) rotate(-23.62)"
+                                >
+                                    <tspan x="0" y="0">C</tspan>
+                                </text>
+                                <text
+                                    class="b"
+                                    transform="translate(218.26 276.65) rotate(-29.43)"
+                                >
+                                    <tspan x="0" y="0">T</tspan>
+                                </text>
+                                <text
+                                    class="b"
+                                    transform="translate(229.68 270.24) rotate(-35.26)"
+                                >
+                                    <tspan x="0" y="0">O</tspan>
+                                </text>
+                                <text
+                                    class="b"
+                                    transform="translate(242.49 261.08) rotate(-41.47)"
+                                >
+                                    <tspan x="0" y="0">R</tspan>
+                                </text>
+                                <text
+                                    class="b"
+                                    transform="translate(253.05 251.53) rotate(-45.77)"
+                                >
+                                    <tspan x="0" y="0"></tspan>
+                                </text>
+                                <text
+                                    class="b"
+                                    transform="translate(257.91 246.75) rotate(-50.34)"
+                                >
+                                    <tspan x="0" y="0">O</tspan>
+                                </text>
+                                <text
+                                    class="b"
+                                    transform="translate(267.87 234.56) rotate(-56.27)"
+                                >
+                                    <tspan x="0" y="0">F</tspan>
+                                </text>
+                                <text
+                                    class="b"
+                                    transform="translate(274.74 224.07) rotate(-60.18)"
+                                >
+                                    <tspan x="0" y="0"></tspan>
+                                </text>
+                                <text
+                                    class="b"
+                                    transform="translate(278.26 218.21) rotate(-64.8)"
+                                >
+                                    <tspan x="0" y="0">O</tspan>
+                                </text>
+                                <text
+                                    class="b"
+                                    transform="translate(284.88 203.93) rotate(-70.93)"
+                                >
+                                    <tspan x="0" y="0">P</tspan>
+                                </text>
+                                <text
+                                    class="b"
+                                    transform="translate(289.34 190.88) rotate(-76.6)"
+                                >
+                                    <tspan x="0" y="0">E</tspan>
+                                </text>
+                                <text
+                                    class="b"
+                                    transform="translate(292.45 177.72) rotate(-82.38)"
+                                >
+                                    <tspan x="0" y="0">R</tspan>
+                                </text>
+                                <text
+                                    class="b"
+                                    transform="translate(294.32 163.35) rotate(-88.28)"
+                                >
+                                    <tspan x="0" y="0">A</tspan>
+                                </text>
+                                <text
+                                    class="b"
+                                    transform="translate(294.72 150.93) rotate(-93.16)"
+                                >
+                                    <tspan x="0" y="0">T</tspan>
+                                </text>
+                                <text
+                                    class="b"
+                                    transform="translate(293.85 137.65) rotate(-97.29)"
+                                >
+                                    <tspan x="0" y="0">I</tspan>
+                                </text>
+                                <text
+                                    class="b"
+                                    transform="translate(293.11 130.77) rotate(-101.92)"
+                                >
+                                    <tspan x="0" y="0">O</tspan>
+                                </text>
+                                <text
+                                    class="b"
+                                    transform="translate(289.79 115.32) rotate(-108.47)"
+                                >
+                                    <tspan x="0" y="0">N</tspan>
+                                </text>
+                                <text
+                                    class="b"
+                                    transform="translate(284.72 100.46) rotate(-114.59)"
+                                >
+                                    <tspan x="0" y="0">S</tspan>
+                                </text>
+                            </svg>
+                        </div>
+                        <div class="team__member">
+                            <span class="member-pic">
+                                <span
+                                    class="member-pic__bg member-pic__bg--terence"
+                                ></span>
+                            </span>
+                        </div>
+                        <div class="team__member">
+                            <span class="member-pic">
+                                <span
+                                    class="member-pic__bg member-pic__bg--tim"
+                                ></span>
+                            </span>
+                        </div>
+                        <div class="team__member">
+                            <span class="member-pic">
+                                <span
+                                    class="member-pic__bg member-pic__bg--andre"
+                                ></span>
+                            </span>
+                        </div>
+                        <div class="team__member">
+                            <span class="member-pic">
+                                <span
+                                    class="member-pic__bg member-pic__bg--teammember"
+                                ></span>
+                            </span>
+                        </div>
+                        <div class="team__member">
+                            <span class="member-pic">
+                                <span
+                                    class="member-pic__bg member-pic__bg--aidan"
+                                ></span>
+                            </span>
+                        </div>
+                        <div class="team__member">
+                            <span class="member-pic">
+                                <span
+                                    class="member-pic__bg member-pic__bg--sam"
+                                ></span>
+                            </span>
+                        </div>
+                        <div class="team__member">
+                            <span class="member-pic">
+                                <span
+                                    class="member-pic__bg member-pic__bg--heather"
+                                ></span>
+                            </span>
+                        </div>
                     </div>
                 </div>
             </section>
-            <section class="faq">
-                <h2>Frequently Asked Questions</h2>
-                <div class="accordion">
-                    <div class="accordion__item">
-                        <p class="accordion__item-title">
-                            When were you founded?
-                        </p>
-                        <button></button>
-                        <p class="accordion__item-body">
-                            Lorem ipsum dolor sit amet consectetur, adipisicing
-                            elit. Illo saepe, vero nobis excepturi laborum
-                            mollitia earum deleniti magni id aliquid dicta
-                            molestiae accusamus eius velit! Animi vitae delectus
-                            facere temporibus! Inventore, ut nihil! Itaque
-                            aliquid quam eum sit assumenda. Cum repellat
-                            pariatur corrupti doloremque asperiores minus saepe,
-                            quaerat inventore accusantium blanditiis vel ducimus
-                            nam reprehenderit est nesciunt? Explicabo, sapiente
-                            numquam.
-                        </p>
+            <section class="faq container container--lg">
+                <h2 class="faq__title">Frequently Asked Questions</h2>
+                <div class="accordion-group">
+                    <div class="accordion">
+                        <div class="accordion__header">
+                            <p class="accordion__title">
+                                When were you founded?
+                            </p>
+                            <button class="accordion__button">
+                                <span class="accordion__icon"></span>
+                            </button>
+                        </div>
+                        <div class="accordion__body">
+                            <p class="p-margin-bottom">
+                                Lorem ipsum dolor sit amet consectetur,
+                                adipisicing elit. Illo saepe, vero nobis
+                                excepturi laborum mollitia earum deleniti magni
+                                id aliquid dicta molestiae accusamus eius velit!
+                                Animi vitae delectus facere temporibus!
+                                Inventore, ut nihil! Itaque aliquid quam eum sit
+                                assumenda.
+                            </p>
+                            <p>
+                                Cum repellat pariatur corrupti doloremque
+                                asperiores minus saepe, quaerat inventore
+                                accusantium blanditiis vel ducimus nam
+                                reprehenderit est nesciunt? Explicabo, sapiente
+                                numquam.
+                            </p>
+                        </div>
                     </div>
-                    <div class="accordion__item">
-                        <p class="accordion__item-title">
-                            Are your team members full time?
-                        </p>
-                        <button></button>
-                        <p class="accordion__item-body">
-                            Lorem ipsum dolor sit amet consectetur, adipisicing
-                            elit. Illo saepe, vero nobis excepturi laborum
-                            mollitia earum deleniti magni id aliquid dicta
-                            molestiae accusamus eius velit! Animi vitae delectus
-                            facere temporibus! Inventore, ut nihil! Itaque
-                            aliquid quam eum sit assumenda. Cum repellat
-                            pariatur corrupti doloremque asperiores minus saepe,
-                            quaerat inventore accusantium blanditiis vel ducimus
-                            nam reprehenderit est nesciunt? Explicabo, sapiente
-                            numquam.
-                        </p>
+                    <div class="accordion">
+                        <div class="accordion__header">
+                            <p class="accordion__title">
+                                Are your team members full time?
+                            </p>
+                            <button class="accordion__button">
+                                <span class="accordion__icon"></span>
+                            </button>
+                        </div>
+                        <div class="accordion__body">
+                            <p class="p-margin-bottom">
+                                Donec porta sed neque bibendum mattis. Ut congue
+                                purus vel venenatis tristique. Pellentesque
+                                tristique eros lacus, nec laoreet turpis varius
+                                elementum. Duis mi diam, vehicula non imperdiet
+                                quis, suscipit at leo. In hac habitasse platea
+                                dictumst.
+                            </p>
+                            <p>
+                                Vestibulum nec facilisis ligula. Nam ac purus
+                                mollis, vehicula quam eu, posuere lectus.
+                                Maecenas lacinia enim at lacus fringilla
+                                malesuada. Ut eu est et mauris eleifend mollis
+                                non non felis. Nulla neque diam, vestibulum sed
+                                bibendum non, vulputate et augue.
+                            </p>
+                        </div>
                     </div>
-                    <div class="accordion__item">
-                        <p class="accordion__item-title">
-                            Are you hiring right now?
-                        </p>
-                        <button></button>
-                        <p class="accordion__item-body">
-                            Lorem ipsum dolor sit amet consectetur, adipisicing
-                            elit. Illo saepe, vero nobis excepturi laborum
-                            mollitia earum deleniti magni id aliquid dicta
-                            molestiae accusamus eius velit! Animi vitae delectus
-                            facere temporibus! Inventore, ut nihil! Itaque
-                            aliquid quam eum sit assumenda. Cum repellat
-                            pariatur corrupti doloremque asperiores minus saepe,
-                            quaerat inventore accusantium blanditiis vel ducimus
-                            nam reprehenderit est nesciunt? Explicabo, sapiente
-                            numquam.
-                        </p>
+                    <div class="accordion">
+                        <div class="accordion__header">
+                            <p class="accordion__title">
+                                Are you hiring right now?
+                            </p>
+                            <button class="accordion__button">
+                                <span class="accordion__icon"></span>
+                            </button>
+                        </div>
+                        <div class="accordion__body">
+                            <p class="p-margin-bottom">
+                                Lorem ipsum dolor sit amet consectetur,
+                                adipisicing elit. Illo saepe, vero nobis
+                                excepturi laborum mollitia earum deleniti magni
+                                id aliquid dicta molestiae accusamus eius velit!
+                                Animi vitae delectus facere temporibus!
+                                Inventore, ut nihil! Itaque aliquid quam eum sit
+                                assumenda.
+                            </p>
+                            <p>
+                                Cum repellat pariatur corrupti doloremque
+                                asperiores minus saepe, quaerat inventore
+                                accusantium blanditiis vel ducimus nam
+                                reprehenderit est nesciunt?.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </section>
-            <footer>
-                <nav>
-                    <ul>
-                        <li>Services</li>
-                        <li>Our Work</li>
-                        <li>About</li>
-                        <li>Contact</li>
-                        <li>Careers</li>
-                    </ul>
-                </nav>
-                <nav class="social">
-                    <p>Follow us</p>
-                    <ul>
-                        <li>Instagram</li>
-                        <li>Facebook</li>
-                        <li>Linkedin</li>
-                    </ul>
-                </nav>
-                <div class="contact">
-                    <p>Business Inquiries</p>
-                    <a href="mailto:hello@meetgoat.com">hello@meetgoat.com</a>
-                    <a href="tel:6049926665">(604) 992-6665</a>
+            <footer class="main-footer">
+                <div class="main-footer__content container container--lg">
+                    <nav class="footer-nav">
+                        <ul class="footer-navlist">
+                            <li class="footer-navlist__item">
+                                <a class="footer-navlist__link" href="/"
+                                    >Services</a
+                                >
+                            </li>
+                            <li class="footer-navlist__item">
+                                <a class="footer-navlist__link" href="/"
+                                    >Our Work</a
+                                >
+                            </li>
+                            <li class="footer-navlist__item">
+                                <a class="footer-navlist__link" href="/"
+                                    >About</a
+                                >
+                            </li>
+                            <li class="footer-navlist__item">
+                                <a class="footer-navlist__link" href="/"
+                                    >Contact</a
+                                >
+                            </li>
+                            <li class="footer-navlist__item">
+                                <a class="footer-navlist__link" href="/"
+                                    >Careers</a
+                                >
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="contact">
+                        <nav class="social-nav">
+                            <p class="contact__header">Follow us</p>
+                            <ul class="social-navlist">
+                                <li class="social-navlist__item">
+                                    <a
+                                        class="social-navlist__link"
+                                        href="https://www.instagram.com/meetgoat/"
+                                    >
+                                        <img
+                                            src="./assets/svg/instagram.svg"
+                                            alt="instagram icon"
+                                        />
+                                        <span class="link__text"
+                                            >Instagram</span
+                                        >
+                                        <span class="link__text--hover"
+                                            >@meetgoat</span
+                                        >
+                                    </a>
+                                </li>
+                                <li class="social-navlist__item">
+                                    <a
+                                        class="social-navlist__link"
+                                        href="https://www.facebook.com/meetgoat"
+                                    >
+                                        <img
+                                            src="./assets/svg/facebook.svg"
+                                            alt="facebook icon"
+                                        />
+                                        <span class="link__text">Facebook</span>
+                                        <span class="link__text--hover"
+                                            >/meetgoat</span
+                                        >
+                                    </a>
+                                </li>
+                                <li class="social-navlist__item">
+                                    <a
+                                        class="social-navlist__link"
+                                        href="https://www.linkedin.com/company/meetgoat/?originalSubdomain=ca"
+                                    >
+                                        <img
+                                            src="./assets/svg/linkedin.svg"
+                                            alt="linkedin icon"
+                                        />
+                                        <span class="link__text">Linkedin</span>
+                                        <span class="link__text--hover"
+                                            >/meetgoat</span
+                                        >
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <div class="contact__methods">
+                            <p class="contact__header">Business Inquiries</p>
+                            <a
+                                class="contact__item"
+                                href="mailto:hello@meetgoat.com"
+                                >hello@meetgoat.com</a
+                            >
+                            <a class="contact__item" href="tel:6049926665"
+                                >(604) 992-6665</a
+                            >
+                        </div>
+                    </div>
                 </div>
-                <div class="copyright">
-                    <p>Goat &#169; 2022</p>
+                <div class="copyright container container--lg">
+                    <p class="copyright__text">Goat &#169; 2022</p>
                 </div>
             </footer>
         </main>

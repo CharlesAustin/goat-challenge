@@ -1,0 +1,26 @@
+@use 'variables' as *;
+
+.intro {
+    display: flex;
+    gap: 30px;
+    max-width: 1100px;
+    margin-top: 7.875rem;
+}
+
+.intro__text-lg {
+    font-family: $font-family-header;
+    font-size: $font-size-h4;
+    color: $colour-han-blue;
+    line-height: 32px;
+}
+
+.intro__text-md {
+    font-family: $font-family-body;
+    font-size: $font-size-body-sm;
+    line-height: 30px;
+    padding-bottom: 1rem;
+}
+
+.intro__text-md--bold {
+    font-weight: bold;
+}
