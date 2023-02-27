@@ -6,14 +6,28 @@
     clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 90%);
 }
 
+.team__grid {
+    display: grid;
+    grid-template-columns: repeat(4, 308px);
+    grid-template-rows: repeat(4, 308px);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    grid-template-areas:
+        "terence . darren ."
+        ". tim . andre"
+        "teammember .  aidan ."
+        ". sam . heather";
+}
+
 .team__inner {
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 6.25rem;
+    padding-bottom: 8.25rem;
 }
 
 .team__header {
     display: flex;
     align-items: center;
+    margin-bottom: 5rem;
 }
 
 .team__title,
@@ -62,7 +76,7 @@
     width: 278px;
     height: 278px;
     margin-top: 50px;
-    transition: all 400ms cubic-bezier(.28,.01,.31,1.47);
+    transition: all 400ms cubic-bezier(0.28, 0.01, 0.31, 1.47);
 }
 
 .member-pic__bg {
@@ -74,7 +88,7 @@
     margin-top: -50px;
     background: none no-repeat center bottom / 278px;
     border-radius: 0 0 139px 139px;
-    transition: all 400ms cubic-bezier(.28,.01,.31,1.47);
+    transition: all 400ms cubic-bezier(0.28, 0.01, 0.31, 1.47);
 }
 
 .member-pic__bg--darren {
@@ -114,11 +128,51 @@
     background-image: url("../assets/images/heather-headshot.png");
 }
 
+.team__member--darren,
+.team__member--andre,
+.team__member--aidan,
+.team__member--heather {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.team__member--darren {
+    grid-area: darren;
+}
+
+.team__member--terence {
+    grid-area: terence;
+}
+
+.team__member--tim {
+    grid-area: tim;
+}
+
+.team__member--andre {
+    grid-area: andre;
+}
+
+.team__member--teammember {
+    grid-area: teammember;
+}
+
+.team__member--aidan {
+    grid-area: aidan;
+}
+
+.team__member--sam {
+    grid-area: sam;
+}
+
+.team__member--heather {
+    grid-area: heather;
+}
 
 .member-pic__info {
     position: absolute;
-    top: 59px;
-    left: 8px;
+    top: 18px;
+    left: -9px;
     z-index: 1;
     width: 330px;
     opacity: 0;
@@ -133,4 +187,3 @@
         font-weight: 600;
     }
 }
-
